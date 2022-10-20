@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Website | <%= title %></title>
+    <style> 
+
+
+        html,body {
+                max-width: 100%;
+                overflow-x: hidden;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 1.2em;
+            }
+            
+            .topbutton:hover {
+                border-left: 3px solid #f0f3f3;
+                background: rgb(87, 87, 87);
+            }
+            .blue {
+                background: #333;
+                color: aliceblue;
+                height: 450px;
+            }
+            .gray {
+                background: rgb(185, 176, 176);
+                height: 400px;
+            }
+            .white {
+                background: rgb(224, 215, 215);
+                height: 500px;
+            }
+            .topnavigation {
+                box-shadow: 20px 0px 50px grey;
+                background: #383435e1;
+                color: aliceblue;
+                font-size: 1.3em;
+                position: fixed;
+                top: 90px;
+                width: 100%;
+
+            }
+            .topnavigationsmall {
+                box-shadow: 20px 0px 50px grey;
+                background: #383435e1;
+                color: aliceblue;
+                font-size: 1.3em;
+                position: fixed;
+                top: 90px;
+                width: 100%;
+            }
+            .socialsitelogo {
+                height: 70px;
+                width: 70px;
+                border-radius: 35px;
+                border: 5px solid rgb(248, 242, 242);
+                background: rgb(230, 226, 226);
+                box-shadow: 5px 5px 20px grey;
+                transition: height 0.1s;
+            }
+            .socialsitelogo:hover {
+                height: 60px;
+                width: 60px;
+                border-radius: 33px;
+            }
+            .socialsitelogo:active {
+                box-shadow: 0 0 5px rgb(231, 226, 226);
+            }
+            .footer {
+                background-color: #0b0c0c;
+            }
+            @media only screen and (max-width: 1400px) {
+                .socialcontainer>* {
+                    margin-top: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            @media only screen and (max-width: 991px) {
+                .topnavigation {
+                    display: none;
+                }
+            }
+
+            @media only screen and (min-width: 992px) {
+                .topnavigationsmall {
+                    display: none;
+                }
+            }
+
+            @media only screen and (max-width: 993px) {
+                .searchbar {
+                    margin-top: 60px;
+                    width: 75%;
+                }
+            }
+
+            @media only screen and (min-width: 992px) {
+                .first {
+                    margin-top: 150px;
+                }
+            }
+            li {
+                list-style-type: none;
+                
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color: white;    
+            }
+            .menutag {
+                color: white;
+                text-decoration: none;   
+            }
+            .slidebar {
+                background: #474444e1;
+                color: #e4e7e4;
+                height: 400px;
+                overflow-y: scroll;
+            }
+            div.slidebar>li {
+                border-bottom: 1px solid #9b9898e1;
+                padding: 10px;
+                margin-bottom: 10px;
+                list-style-type: none;
+                height: 40px;
+                transition: height 0.2s;
+                overflow: hidden;
+            }
+            div.slidebar>li.important {
+                font-weight: bold;
+                background: #f0182ae1;
+            }
+            div.slidebar>li:hover {
+                background: #a8a6a6e1;
+                height: 150px;
+            }
+            .dropdown-menu {
+                background: rgb(224, 221, 221);
+            }
+            .aboutpage{
+                height:800px;
+                background: rgb(217, 240, 240);
+            }
+            .core{
+                
+                margin-top: 5%;
+                height: 500px;
+            }
+            .fileback{
+                border-radius: 5px;
+                background: rgb(197, 234, 243);
+            }
+            .logofile:hover{
+                box-shadow: 3px 3px 3px #ccc;
+            }
+            .labalediv{
+                color: #d6dad6;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 50%;
+                margin-left: 25%;
+                margin-right: 25%;
+            }
+            #panel {
+                color: black;
+                display: none;
+                }
+
+            .grayback {
+                background: #615d5d;  
+                display: none;        
+                z-index: 1; 
+                position: fixed;  
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0.5;
+            }
+            .click{
+                position: fixed;
+                margin-left: 10%;
+                margin-right: 10%;
+                width:80%;
+                z-index: 2;  
+                background: white;
+            }
+            .consent{
+                background: #e2dede;  
+                display: none;        
+                z-index: 2; 
+                position: fixed;  
+                height: 10%;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                
+            }
+    </style>
+</head>

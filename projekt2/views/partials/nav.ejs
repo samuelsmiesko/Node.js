@@ -1,0 +1,48 @@
+<nav>
+   
+    <div class="row">
+        <div class="container-fluid p-4 col-lg-8 justify-content-start">
+            <img src="/cat.png" class="rounded" width="50" height="50">
+        </div>
+
+        <div class="container-fluid p-4 col-lg-4 justify-content-end searchbar">
+            <div class="input-group rounded">
+                <input id="searchbar" type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" />
+                <span onclick="searchaction()" class="input-group-text border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row topnavigation">
+        <span class="container-fluid col-sm-2">
+        </span>
+        <a href="/" class="container d-flex m-2 align-items-center justify-content-center col-sm-2 topbutton">
+            <li>Home</li>
+        </a>   
+        <a href="/gallery" class="container d-flex m-2 align-items-center justify-content-center col-sm-2 topbutton">
+            <li>Gallery</li>
+        </a>
+        <a href="/downloads" class="container d-flex m-2 align-items-center justify-content-center col-sm-2 topbutton">
+            <li>Downloads</li>
+        </a>
+        <a href="/contacts" class="container d-flex m-2 align-items-center justify-content-center col-sm-2 topbutton">
+            <li>Contacts</li>
+        </a> 
+        <span class="container-fluid col-sm-2">
+        </span>
+    </div>
+    <div class="topnavigationsmall">
+        <li class="nav-item dropdown">
+            <a class="menutag" data-bs-toggle="dropdown" href="#">
+                <div class="container m-2 align-items-center justify-content-start menutag">Menu</div>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/">Home</a></li>
+                <li><a class="dropdown-item" href="/about">Gallery</a></li>
+                <li><a class="dropdown-item" href="/downloads">Downloads</a></li>
+                <li><a class="dropdown-item" href="/">Contacts</a></li>
+            </ul>
+        </li>
+</nav>
